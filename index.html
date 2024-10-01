@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="user-manager-container">
+        <h1>Gestor de Usuarios</h1>
+        <form id="userForm">
+            <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            <select id="userRole">
+                <option value="admin">Administrador</option>
+                <option value="user">Usuario</option>
+                <option value="guest">Invitado</option>
+            </select>
+            <button type="submit">Crear Usuario</button>
+        </form>
+        <div id="userList">
+            <h2>Lista de Usuarios:</h2>
+            <ul id="users"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
